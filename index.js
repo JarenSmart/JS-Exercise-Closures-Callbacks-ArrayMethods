@@ -66,9 +66,8 @@ function processLength(list, callback) {
  * should return 'barbar'.
  */
 function processLastItem(stringList, callback) {
-  //CODE HERE
+  return callback(stringList[stringList.length - 1]);
 }
-
 /**
  * ### Challenge `processSum`
  *
@@ -87,7 +86,8 @@ function processLastItem(stringList, callback) {
  * should return 1000.
  */
 function processSum(numberList, callback) {
-  //CODE HERE
+  const sum = numberList.reduce((a, b) => a + b, 0);
+  return callback(sum);
 }
 
 /**
